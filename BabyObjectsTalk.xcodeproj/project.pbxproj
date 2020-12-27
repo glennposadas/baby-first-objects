@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45AA5C6B25990134007672C1 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45AA5C6925990134007672C1 /* beachday.ttf */; };
+		45AA5C6C25990134007672C1 /* Bubble Bobble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45AA5C6A25990134007672C1 /* Bubble Bobble.ttf */; };
 		45C4B86E25985B60006A8F8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B86D25985B60006A8F8B /* AppDelegate.swift */; };
 		45C4B87025985B60006A8F8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B86F25985B60006A8F8B /* SceneDelegate.swift */; };
 		45C4B87225985B60006A8F8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B87125985B60006A8F8B /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		45AA5C642598E54C007672C1 /* BabyObjectsTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabyObjectsTalk.entitlements; sourceTree = "<group>"; };
+		45AA5C6925990134007672C1 /* beachday.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beachday.ttf; sourceTree = "<group>"; };
+		45AA5C6A25990134007672C1 /* Bubble Bobble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubble Bobble.ttf"; sourceTree = "<group>"; };
 		45C4B86A25985B60006A8F8B /* BabyObjectsTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyObjectsTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C4B86D25985B60006A8F8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C4B86F25985B60006A8F8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +42,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45AA5C672599012D007672C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45C4B87825985B61006A8F8B /* LaunchScreen.storyboard */,
+				45C4B87625985B61006A8F8B /* Assets.xcassets */,
+				45AA5C6825990134007672C1 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		45AA5C6825990134007672C1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				45AA5C6925990134007672C1 /* beachday.ttf */,
+				45AA5C6A25990134007672C1 /* Bubble Bobble.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		45AA5C6E2599014F007672C1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				45AA5C642598E54C007672C1 /* BabyObjectsTalk.entitlements */,
+				45C4B86D25985B60006A8F8B /* AppDelegate.swift */,
+				45C4B86F25985B60006A8F8B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		45AA5C6F2599015A007672C1 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				45C4B87B25985B61006A8F8B /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		45AA5C7025990181007672C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45C4B87325985B60006A8F8B /* Main.storyboard */,
+				45C4B87125985B60006A8F8B /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		45C4B86125985B60006A8F8B = {
 			isa = PBXGroup;
 			children = (
@@ -57,14 +107,10 @@
 		45C4B86C25985B60006A8F8B /* BabyObjectsTalk */ = {
 			isa = PBXGroup;
 			children = (
-				45AA5C642598E54C007672C1 /* BabyObjectsTalk.entitlements */,
-				45C4B86D25985B60006A8F8B /* AppDelegate.swift */,
-				45C4B86F25985B60006A8F8B /* SceneDelegate.swift */,
-				45C4B87125985B60006A8F8B /* ViewController.swift */,
-				45C4B87325985B60006A8F8B /* Main.storyboard */,
-				45C4B87625985B61006A8F8B /* Assets.xcassets */,
-				45C4B87825985B61006A8F8B /* LaunchScreen.storyboard */,
-				45C4B87B25985B61006A8F8B /* Info.plist */,
+				45AA5C6E2599014F007672C1 /* App */,
+				45AA5C7025990181007672C1 /* Views */,
+				45AA5C6F2599015A007672C1 /* Plist */,
+				45AA5C672599012D007672C1 /* Resources */,
 			);
 			path = BabyObjectsTalk;
 			sourceTree = "<group>";
@@ -127,6 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45C4B87A25985B61006A8F8B /* LaunchScreen.storyboard in Resources */,
+				45AA5C6B25990134007672C1 /* beachday.ttf in Resources */,
+				45AA5C6C25990134007672C1 /* Bubble Bobble.ttf in Resources */,
 				45C4B87725985B61006A8F8B /* Assets.xcassets in Resources */,
 				45C4B87525985B60006A8F8B /* Main.storyboard in Resources */,
 			);
@@ -288,10 +336,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BabyObjectsTalk/BabyObjectsTalk.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BabyObjectsTalk/App/BabyObjectsTalk.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE4YFXSB23;
-				INFOPLIST_FILE = BabyObjectsTalk/Info.plist;
+				INFOPLIST_FILE = BabyObjectsTalk/Plist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,10 +359,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BabyObjectsTalk/BabyObjectsTalk.entitlements;
+				CODE_SIGN_ENTITLEMENTS = BabyObjectsTalk/App/BabyObjectsTalk.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE4YFXSB23;
-				INFOPLIST_FILE = BabyObjectsTalk/Info.plist;
+				INFOPLIST_FILE = BabyObjectsTalk/Plist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
