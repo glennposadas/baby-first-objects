@@ -25,14 +25,14 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="aCu-zp-Asm">
                                 <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby" translatesAutoresizingMaskIntoConstraints="NO" id="OuP-Pg-S8E">
-                                <rect key="frame" x="0.0" y="0.0" width="337.66666666666669" height="405"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby" translatesAutoresizingMaskIntoConstraints="NO" id="OuP-Pg-S8E">
+                                <rect key="frame" x="0.0" y="1" width="336.66666666666669" height="404"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OuP-Pg-S8E" secondAttribute="height" multiplier="1:1.2" id="IKD-iT-zx6"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yvU-xl-a3V">
-                                <rect key="frame" x="277.66666666666674" y="0.0" width="474.33333333333326" height="375"/>
+                                <rect key="frame" x="276.66666666666674" y="-1000" width="475.33333333333326" height="1375"/>
                                 <string key="text">My First 
 Words</string>
                                 <fontDescription key="fontDescription" name="BubbleBobble" family="Bubble Bobble" pointSize="120"/>
@@ -52,8 +52,8 @@ Words</string>
                             <constraint firstAttribute="bottom" secondItem="OuP-Pg-S8E" secondAttribute="bottom" constant="-30" id="30f-4W-fRC"/>
                             <constraint firstItem="OuP-Pg-S8E" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="5c4-ng-C9x"/>
                             <constraint firstAttribute="trailing" secondItem="aCu-zp-Asm" secondAttribute="trailing" id="IAT-2U-rYV"/>
-                            <constraint firstItem="OuP-Pg-S8E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IMd-nB-2NR"/>
-                            <constraint firstItem="yvU-xl-a3V" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="XYf-ui-oQa"/>
+                            <constraint firstItem="OuP-Pg-S8E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="IMd-nB-2NR"/>
+                            <constraint firstItem="yvU-xl-a3V" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-1000" id="XYf-ui-oQa"/>
                             <constraint firstAttribute="bottom" secondItem="aCu-zp-Asm" secondAttribute="bottom" id="c5q-5A-03w"/>
                             <constraint firstItem="yvU-xl-a3V" firstAttribute="leading" secondItem="OuP-Pg-S8E" secondAttribute="trailing" constant="-60" id="g0y-Oe-jBl"/>
                             <constraint firstAttribute="bottom" secondItem="yvU-xl-a3V" secondAttribute="bottom" id="nn4-di-hOV"/>
