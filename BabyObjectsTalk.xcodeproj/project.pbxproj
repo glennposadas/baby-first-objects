@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		45AA5C6B25990134007672C1 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45AA5C6925990134007672C1 /* beachday.ttf */; };
 		45AA5C6C25990134007672C1 /* Bubble Bobble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45AA5C6A25990134007672C1 /* Bubble Bobble.ttf */; };
+		45AA5C7625990648007672C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AA5C7525990647007672C1 /* Assets.xcassets */; };
 		45C4B86E25985B60006A8F8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B86D25985B60006A8F8B /* AppDelegate.swift */; };
 		45C4B87025985B60006A8F8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B86F25985B60006A8F8B /* SceneDelegate.swift */; };
 		45C4B87225985B60006A8F8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B87125985B60006A8F8B /* ViewController.swift */; };
 		45C4B87525985B60006A8F8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C4B87325985B60006A8F8B /* Main.storyboard */; };
-		45C4B87725985B61006A8F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C4B87625985B61006A8F8B /* Assets.xcassets */; };
 		45C4B87A25985B61006A8F8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C4B87825985B61006A8F8B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +21,12 @@
 		45AA5C642598E54C007672C1 /* BabyObjectsTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabyObjectsTalk.entitlements; sourceTree = "<group>"; };
 		45AA5C6925990134007672C1 /* beachday.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beachday.ttf; sourceTree = "<group>"; };
 		45AA5C6A25990134007672C1 /* Bubble Bobble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubble Bobble.ttf"; sourceTree = "<group>"; };
+		45AA5C7525990647007672C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45C4B86A25985B60006A8F8B /* BabyObjectsTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyObjectsTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C4B86D25985B60006A8F8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C4B86F25985B60006A8F8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		45C4B87125985B60006A8F8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45C4B87425985B60006A8F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		45C4B87625985B61006A8F8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45C4B87925985B61006A8F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45C4B87B25985B61006A8F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,9 +45,9 @@
 		45AA5C672599012D007672C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				45C4B87825985B61006A8F8B /* LaunchScreen.storyboard */,
-				45C4B87625985B61006A8F8B /* Assets.xcassets */,
+				45AA5C7525990647007672C1 /* Assets.xcassets */,
 				45AA5C6825990134007672C1 /* Fonts */,
+				45C4B87825985B61006A8F8B /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -175,8 +175,8 @@
 				45C4B87A25985B61006A8F8B /* LaunchScreen.storyboard in Resources */,
 				45AA5C6B25990134007672C1 /* beachday.ttf in Resources */,
 				45AA5C6C25990134007672C1 /* Bubble Bobble.ttf in Resources */,
-				45C4B87725985B61006A8F8B /* Assets.xcassets in Resources */,
 				45C4B87525985B60006A8F8B /* Main.storyboard in Resources */,
+				45AA5C7625990648007672C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
