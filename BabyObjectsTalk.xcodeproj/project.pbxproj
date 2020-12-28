@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		455CDE322599F00300742F46 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE2E2599F00200742F46 /* Delay.swift */; };
+		455CDE332599F00300742F46 /* SFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE2F2599F00200742F46 /* SFX.swift */; };
+		455CDE342599F00300742F46 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE302599F00200742F46 /* UIViewController+Utils.swift */; };
+		455CDE352599F00300742F46 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE312599F00300742F46 /* AppDefaults.swift */; };
+		455CDE392599F51000742F46 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDE382599F51000742F46 /* BaseViewController.swift */; };
 		45AA5C6B25990134007672C1 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45AA5C6925990134007672C1 /* beachday.ttf */; };
 		45AA5C6C25990134007672C1 /* Bubble Bobble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45AA5C6A25990134007672C1 /* Bubble Bobble.ttf */; };
 		45AA5C7625990648007672C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AA5C7525990647007672C1 /* Assets.xcassets */; };
 		45C4B86E25985B60006A8F8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B86D25985B60006A8F8B /* AppDelegate.swift */; };
 		45C4B87025985B60006A8F8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B86F25985B60006A8F8B /* SceneDelegate.swift */; };
-		45C4B87225985B60006A8F8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B87125985B60006A8F8B /* ViewController.swift */; };
 		45C4B87525985B60006A8F8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C4B87325985B60006A8F8B /* Main.storyboard */; };
 		45C4B87A25985B61006A8F8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C4B87825985B61006A8F8B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		455CDE2E2599F00200742F46 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		455CDE2F2599F00200742F46 /* SFX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFX.swift; sourceTree = "<group>"; };
+		455CDE302599F00200742F46 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		455CDE312599F00300742F46 /* AppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
+		455CDE382599F51000742F46 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		45AA5C642598E54C007672C1 /* BabyObjectsTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BabyObjectsTalk.entitlements; sourceTree = "<group>"; };
 		45AA5C6925990134007672C1 /* beachday.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beachday.ttf; sourceTree = "<group>"; };
 		45AA5C6A25990134007672C1 /* Bubble Bobble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubble Bobble.ttf"; sourceTree = "<group>"; };
@@ -25,7 +34,6 @@
 		45C4B86A25985B60006A8F8B /* BabyObjectsTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyObjectsTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C4B86D25985B60006A8F8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C4B86F25985B60006A8F8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45C4B87125985B60006A8F8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45C4B87425985B60006A8F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45C4B87925985B61006A8F8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45C4B87B25985B61006A8F8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +50,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		455CDE2D2599EED600742F46 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				455CDE312599F00300742F46 /* AppDefaults.swift */,
+				455CDE2E2599F00200742F46 /* Delay.swift */,
+				455CDE2F2599F00200742F46 /* SFX.swift */,
+				455CDE302599F00200742F46 /* UIViewController+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		455CDE372599F51000742F46 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				455CDE382599F51000742F46 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		45AA5C672599012D007672C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +109,8 @@
 		45AA5C7025990181007672C1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				455CDE372599F51000742F46 /* Base */,
 				45C4B87325985B60006A8F8B /* Main.storyboard */,
-				45C4B87125985B60006A8F8B /* ViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +137,7 @@
 				45AA5C6E2599014F007672C1 /* App */,
 				45AA5C7025990181007672C1 /* Views */,
 				45AA5C6F2599015A007672C1 /* Plist */,
+				455CDE2D2599EED600742F46 /* Utils */,
 				45AA5C672599012D007672C1 /* Resources */,
 			);
 			path = BabyObjectsTalk;
@@ -187,9 +215,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45C4B87225985B60006A8F8B /* ViewController.swift in Sources */,
+				455CDE322599F00300742F46 /* Delay.swift in Sources */,
+				455CDE332599F00300742F46 /* SFX.swift in Sources */,
 				45C4B86E25985B60006A8F8B /* AppDelegate.swift in Sources */,
 				45C4B87025985B60006A8F8B /* SceneDelegate.swift in Sources */,
+				455CDE342599F00300742F46 /* UIViewController+Utils.swift in Sources */,
+				455CDE392599F51000742F46 /* BaseViewController.swift in Sources */,
+				455CDE352599F00300742F46 /* AppDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +378,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.BabyObjectsTalk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.babyobjectstalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -369,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.BabyObjectsTalk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.babyobjectstalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
