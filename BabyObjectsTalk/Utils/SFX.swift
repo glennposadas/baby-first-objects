@@ -32,24 +32,6 @@ class SFX {
         player?.play()
     }
     
-    // MARK: - Questions
-    
-    func playQuestionForLetter(_ letter: Letter) {
-        let useZed = AppDefaults.getObjectWithKey(.useZed, type: Bool.self) ?? false
-        let fileName = (useZed ? "UK_" : "US_") + letter.stringValue.uppercased() + ".mp3"
-        playFile(fileName)
-    }
-    
-    // MARK: - Result
-    
-    func playCorrect() {
-        playFile("correct2.mp3")
-    }
-    
-    func playWrong() {
-        playFile("wrong.mp3")
-    }
-    
     // MARK: - BG
     
     func playBGMusic() {
@@ -63,6 +45,6 @@ class SFX {
     }
     
     func stopBGMusic() {
-        bgPlayer?.stop()
+//        bgPlayer?.stop()
     }
 }
