@@ -9,7 +9,13 @@ import UIKit
 
 class BaseButton: UIButton {
 
-    var shouldHighlight: Bool = true
+    // MARK: - Properties
+    
+    @IBInspectable var word: String?
+    private var shouldHighlight: Bool = true
+    
+    // MARK: - Overrides
+    // MARK: Functions
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

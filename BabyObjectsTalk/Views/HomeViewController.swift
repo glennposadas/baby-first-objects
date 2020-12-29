@@ -24,6 +24,7 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
 
         self.setupViews()
+        self.setupPageController()
     }
 
     private func setupViews() {
@@ -32,9 +33,13 @@ class HomeViewController: BaseViewController {
         constraint_ScrollViewWidth.constant = self.view.frame.width * 0.30
     }
     
+    private func setupPageController() {
+        
+    }
+    
     // MARK: - IBActions
     
     @IBAction func wordButtonTapped(_ button: BaseButton) {
-
+        
     }
 }

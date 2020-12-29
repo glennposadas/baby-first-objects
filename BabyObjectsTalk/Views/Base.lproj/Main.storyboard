@@ -91,6 +91,9 @@ Words</string>
                                                 </constraints>
                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
                                                 <state key="normal" image="apple"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="apple"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="CO1-y7-eu4"/>
                                                 </connections>
@@ -99,6 +102,9 @@ Words</string>
                                                 <rect key="frame" x="154" y="8" width="138" height="138"/>
                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
                                                 <state key="normal" image="car"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="car"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="0Pj-zx-bOY"/>
                                                 </connections>
@@ -107,6 +113,9 @@ Words</string>
                                                 <rect key="frame" x="154" y="154" width="138" height="138"/>
                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
                                                 <state key="normal" image="cat"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="cat"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="MbF-kV-Lf4"/>
                                                 </connections>
@@ -115,6 +124,9 @@ Words</string>
                                                 <rect key="frame" x="154" y="300" width="138" height="138"/>
                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
                                                 <state key="normal" image="duck"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="duck"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="R3d-n5-cIe"/>
                                                 </connections>
@@ -123,6 +135,9 @@ Words</string>
                                                 <rect key="frame" x="154" y="446" width="138" height="138"/>
                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
                                                 <state key="normal" image="flower"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="flower"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="0IW-JY-CIV"/>
                                                 </connections>
@@ -131,6 +146,9 @@ Words</string>
                                                 <rect key="frame" x="8" y="154" width="138" height="138"/>
                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
                                                 <state key="normal" image="ball"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="ball"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="WYl-Ld-YuJ"/>
                                                 </connections>
@@ -139,6 +157,9 @@ Words</string>
                                                 <rect key="frame" x="8" y="300" width="138" height="138"/>
                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
                                                 <state key="normal" image="dog"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="dog"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="D5O-xf-vem"/>
                                                 </connections>
@@ -147,6 +168,9 @@ Words</string>
                                                 <rect key="frame" x="8" y="446" width="138" height="138"/>
                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
                                                 <state key="normal" image="boat"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="boat"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="i82-bb-MoJ"/>
                                                 </connections>
@@ -155,6 +179,9 @@ Words</string>
                                                 <rect key="frame" x="8" y="592" width="138" height="138"/>
                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
                                                 <state key="normal" image="train"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="train"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="YTz-q8-ZtN"/>
                                                 </connections>
@@ -163,6 +190,9 @@ Words</string>
                                                 <rect key="frame" x="154" y="592" width="138" height="138"/>
                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
                                                 <state key="normal" image="shoes"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="shoes"/>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="XfU-A3-w3N"/>
                                                 </connections>
