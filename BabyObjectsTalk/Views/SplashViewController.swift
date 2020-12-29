@@ -32,7 +32,7 @@ class SplashViewController: BaseViewController {
     private func setupViews() { }
     
     private func animateViews() {
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: 1.0, animations: {
             self.imageView_SplashIcon.alpha = 1
             self.label_SplashTitle.alpha = 1
         }) { _ in
