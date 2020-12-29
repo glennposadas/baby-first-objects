@@ -33,10 +33,10 @@ class SFX {
     // MARK: - Public
     
     func playUKEnglishSettings() {
-        playFile("UK_Settings")
+        playFile("UK_Settings.mp3")
     }
     
     func playUSEnglishSettings() {
-        playFile("US_Settings")
+        playFile("US_Settings.mp3")
     }
 }
