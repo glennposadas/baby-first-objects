@@ -98,7 +98,7 @@ Words</string>
                                     <constraint firstAttribute="trailing" secondItem="utM-fv-5EB" secondAttribute="trailing" id="t07-hW-r5W"/>
                                 </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13w-GL-mGE">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13w-GL-mGE" userLabel="Page View Controller Container View">
                                 <rect key="frame" x="0.0" y="0.0" width="596" height="414"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -115,6 +115,11 @@ Words</string>
                             <constraint firstItem="WYv-Lg-7Uj" firstAttribute="bottom" secondItem="YYn-Wc-IrO" secondAttribute="bottom" id="sjh-xR-84N"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentView" destination="utM-fv-5EB" id="URg-lC-dzl"/>
+                        <outlet property="pageControllerContainerView" destination="13w-GL-mGE" id="rZh-kC-mYd"/>
+                        <outlet property="scrollView" destination="WYv-Lg-7Uj" id="ske-h1-bA4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ZN-jK-mV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
