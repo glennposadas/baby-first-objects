@@ -9,7 +9,8 @@ import Foundation
 
 /// Keep markers alphabetically arranged for easier viewing.
 enum AppDefaultsKey: CodingKey {
-    case useZed
+    /// By default, the app uses US English, this is true in the defaults if the user has been asked.
+    case askedSettings
 }
 
 /// The class that has multiple class functions for handling defaults.

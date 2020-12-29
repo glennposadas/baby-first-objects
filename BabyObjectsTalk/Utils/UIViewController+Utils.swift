@@ -29,7 +29,7 @@ extension UIViewController {
      - parameter message: The body of the alert, nullable, since we can just sometimes use the title parameter.
      - parameter okButtonTitle: the title of the okay button.
      - parameter cancelButtonTitle: The title of the cancel button, defaults to nil, nullable.
-     - parameter completion: The ```LLFAlertCallBack```, returns Bool. True when the user taps on the OK button, otherwise false.
+     - parameter completion: The `AlertCallBack`  returns Bool. True when the user taps on the OK button, otherwise false.
      */
     func alert(
         title: String,
