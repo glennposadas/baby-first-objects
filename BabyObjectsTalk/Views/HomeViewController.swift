@@ -22,9 +22,14 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        askForSettings()
         setupViews()
         setupPageController()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        askForSettings()
     }
     
     private func askForSettings() {
@@ -43,6 +48,9 @@ class HomeViewController: BaseViewController {
     private func informUser(_ didTapUS: Bool) {
         let kind = didTapUS ? "US" : "British"
         let message = "Hi! You've selected \(kind) English! You can change this setting on the Settings app, and then navigate to the WORDS FOR BABIES. Thank you!"
+        
+        didTapUS ? SFX.shared.playUSEnglishSettings() : SFX.shared.playUKEnglishSettings()
+            
         alert(
             title: "A quick note",
             message: message,

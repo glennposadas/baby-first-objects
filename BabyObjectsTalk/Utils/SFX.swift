@@ -19,9 +19,7 @@ class SFX {
     // MARK: - Overrides
     // MARK: Functions
     
-    private init() {
-        
-    }
+    private init() { }
     
     private func playFile(_ fileName: String) {
         let soundFilePath = "\(Bundle.main.resourcePath ?? "")/\(fileName)"
@@ -32,19 +30,13 @@ class SFX {
         player?.play()
     }
     
-    // MARK: - BG
+    // MARK: - Public
     
-    func playBGMusic() {
-        let soundFilePath = "\(Bundle.main.resourcePath ?? "")/bg.mp3"
-        let soundFileURL = URL(fileURLWithPath: soundFilePath)
-
-        bgPlayer = try? AVAudioPlayer(contentsOf: soundFileURL)
-        bgPlayer?.numberOfLoops = -1 //Infinite
-
-        bgPlayer?.play()
+    func playUKEnglishSettings() {
+        playFile("UK_Settings")
     }
     
-    func stopBGMusic() {
-//        bgPlayer?.stop()
+    func playUSEnglishSettings() {
+        playFile("US_Settings")
     }
 }

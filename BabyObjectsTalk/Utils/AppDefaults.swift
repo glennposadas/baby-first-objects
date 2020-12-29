@@ -8,8 +8,10 @@
 import Foundation
 
 /// Keep markers alphabetically arranged for easier viewing.
-enum AppDefaultsKey: CodingKey {
-    /// By default, the app uses US English, this is true in the defaults if the user has been asked.
+enum AppDefaultsKey: String, CodingKey {
+    /// By default, the app uses US English
+    case useUSEnglish = "use_us_english"
+    /// Check if the user has been asked once.
     case askedSettings
 }
 
