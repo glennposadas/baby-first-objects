@@ -6,8 +6,15 @@
 //
 
 import Foundation
+import UIKit
 
 enum Word: Int, CodingKey {
     case apple = 1
     case car, ball, cat, dog, duck, boat, flower, train, shoes
+}
+
+extension Word {
+    var icon: UIImage? {
+        UIImage(named: self.stringValue)
+    }
 }
