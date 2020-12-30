@@ -11,7 +11,7 @@ import Foundation
 class SFX {
     
     // MARK: - Properties
-
+    
     static let shared = SFX()
     private var bgPlayer: AVAudioPlayer?
     private var player: AVAudioPlayer?
@@ -21,9 +21,17 @@ class SFX {
     
     private init() { }
     
-    private func playFile(_ fileName: String) {
+    private func playFile(_ fileName: String, shouldPlayOnSilent: Bool = true) {
         let soundFilePath = "\(Bundle.main.resourcePath ?? "")/\(fileName)"
         let soundFileURL = URL(fileURLWithPath: soundFilePath)
+        
+        if shouldPlayOnSilent {
+            do {
+                try AVAudioSession.sharedInstance().setCategory(.playback)
+            } catch(let error) {
+                print(error.localizedDescription)
+            }
+        }
         
         player = try? AVAudioPlayer(contentsOf: soundFileURL)
         player?.volume = 1.0
