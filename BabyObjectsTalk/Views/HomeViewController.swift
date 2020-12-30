@@ -60,6 +60,7 @@ class HomeViewController: BaseViewController {
     }
     
     private func setupViews() {
+        view.backgroundColor = .white
         contentView.backgroundColor = .white
         pageControllerContainerView.backgroundColor = .white
         constraint_ScrollViewWidth.constant = self.view.frame.width * 0.30

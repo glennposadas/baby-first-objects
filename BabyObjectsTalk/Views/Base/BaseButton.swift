@@ -13,6 +13,7 @@ class BaseButton: UIButton {
     
     @IBInspectable var word: String?
     private var shouldHighlight: Bool = true
+    private let label_Title = UILabel()
     
     // MARK: - Overrides
     // MARK: Functions
@@ -29,20 +30,51 @@ class BaseButton: UIButton {
     }
     
     private func setup() {
-        self.layer.cornerRadius = self.frame.width / 2
+        layer.cornerRadius = frame.width / 2
         
-        self.clipsToBounds = true
+        clipsToBounds = true
         
-        self.layer.borderColor = UIColor.darkGray.cgColor
-        self.layer.borderWidth = 1.0
+        layer.borderColor = UIColor.darkGray.cgColor
+        layer.borderWidth = 1.0
         
-        self.imageView?.contentMode = .scaleAspectFit
+        if let imageView = self.imageView {
+            imageView.contentMode = .scaleAspectFit
+            imageView.translatesAutoresizingMaskIntoConstraints = false
+            
+            NSLayoutConstraint.activate([
+                imageView.topAnchor.constraint(equalTo: topAnchor, constant: 0),
+                imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8),
+                imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 4),
+                imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -4),
+            ])
+        }
+    }
+    
+    private func setupTitle() {
+        guard let value = value(forKey: "word") as? String,
+              let word = Word(stringValue: value) else { return }
+        
+        label_Title.text = word.stringValue.capitalized
+        label_Title.numberOfLines = 1
+        label_Title.textAlignment = .center
+        label_Title.adjustsFontSizeToFitWidth = true
+        label_Title.shadowColor = .lightGray
+        label_Title.shadowOffset = CGSize(width: -1, height: -1)
+        label_Title.translatesAutoresizingMaskIntoConstraints = false
+        
+        addSubview(label_Title)
+        NSLayoutConstraint.activate([
+            label_Title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
+            label_Title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
+            label_Title.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0)
+        ])
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         setup()
+        setupTitle()
     }
     
     override func layoutSubviews() {
