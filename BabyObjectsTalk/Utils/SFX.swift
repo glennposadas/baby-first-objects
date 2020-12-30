@@ -39,4 +39,9 @@ class SFX {
     func playUSEnglishSettings() {
         playFile("US_Settings.mp3")
     }
+    
+    func playWord(_ word: Word) {
+        let countryPrefix = AppDefaults.getObjectWithKey(.useUSEnglish, type: Bool.self) == true ? "US" : "UK"
+        playFile("\(countryPrefix)_\(word.stringValue).mp3")
+    }
 }

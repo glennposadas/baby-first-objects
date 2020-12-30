@@ -50,7 +50,7 @@ class HomeViewController: BaseViewController {
         let message = "Hi! You've selected \(kind) English! You can change this setting on the Settings app, and then navigate to the WORDS FOR BABIES. Thank you!"
         
         didTapUS ? SFX.shared.playUSEnglishSettings() : SFX.shared.playUKEnglishSettings()
-            
+        
         alert(
             title: "A quick note",
             message: message,
@@ -72,6 +72,11 @@ class HomeViewController: BaseViewController {
     // MARK: - IBActions
     
     @IBAction func wordButtonTapped(_ button: BaseButton) {
+        guard let value = button.value(forKey: "word") as? String,
+              let word = Word(stringValue: value) else {
+            return
+        }
         
+        SFX.shared.playWord(word)
     }
 }
