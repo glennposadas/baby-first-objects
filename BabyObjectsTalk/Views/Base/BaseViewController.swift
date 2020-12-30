@@ -15,6 +15,14 @@ class BaseViewController: UIViewController {
         true
     }
     
+    override var preferredScreenEdgesDeferringSystemGestures: UIRectEdge {
+        return [.top, .bottom]
+    }
+    
+    override var prefersHomeIndicatorAutoHidden: Bool {
+        return false
+    }
+    
     // MARK: - Overrides
     // MARK: Functions
     
