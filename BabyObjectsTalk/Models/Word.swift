@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-enum Word: Int, CodingKey {
+enum Word: Int, CodingKey, CaseIterable {
     case apple = 1
     case car, ball, cat, dog, duck, boat, flower, train, shoes
 }

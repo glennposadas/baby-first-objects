@@ -16,6 +16,9 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var constraint_ScrollViewWidth: NSLayoutConstraint!
     
+    let data = Word.allCases
+    private var pageViewController: UIPageViewController?
+    
     // MARK: - Overrides
     // MARK: Functions
     
@@ -67,7 +70,51 @@ class HomeViewController: BaseViewController {
     }
     
     private func setupPageController() {
+        pageViewController = UIPageViewController(
+            transitionStyle: .pageCurl,
+            navigationOrientation: .horizontal,
+            options: nil
+        )
         
+        let firstWordController = mainSB.instantiateViewController(identifier: "WordViewerViewController")
+            as! WordViewerViewController
+        firstWordController.word = data.first
+        
+        let viewControllers = [firstWordController]
+        pageViewController!.setViewControllers(
+            viewControllers,
+            direction: .forward,
+            animated: false,
+            completion: nil
+        )
+        
+        pageViewController?.dataSource = self
+        
+        addChild(pageViewController!)
+        pageControllerContainerView.addSubview(pageViewController!.view)
+
+        pageViewController!.view.translatesAutoresizingMaskIntoConstraints = false
+    
+        NSLayoutConstraint.activate([
+            pageViewController!.view.topAnchor.constraint(
+                equalTo: pageControllerContainerView.topAnchor,
+                constant: 0
+            ),
+            pageViewController!.view.bottomAnchor.constraint(
+                equalTo: pageControllerContainerView.bottomAnchor,
+                constant: 0
+            ),
+            pageViewController!.view.leadingAnchor.constraint(
+                equalTo: pageControllerContainerView.leadingAnchor,
+                constant: 0
+            ),
+            pageViewController!.view.trailingAnchor.constraint(
+                equalTo: pageControllerContainerView.trailingAnchor,
+                constant: 0
+            )
+        ])
+        
+        pageViewController!.didMove(toParent: self)
     }
     
     // MARK: - IBActions
@@ -79,5 +126,42 @@ class HomeViewController: BaseViewController {
         }
         
         SFX.shared.playWord(word)
+    }
+}
+
+// MARK: - UIPageViewControllerDataSource
+
+extension HomeViewController: UIPageViewControllerDataSource {
+    func pageViewController(_ pageViewController: UIPageViewController,
+                            viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        var index = indexOfViewController(viewController as! WordViewerViewController)
+        if (index == 0) || (index == NSNotFound) { return nil }
+        index -= 1
+        let vc = viewControllerAtIndex(index)
+        return vc
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController,
+                            viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        var index = indexOfViewController(viewController as! WordViewerViewController)
+        if index == NSNotFound { return nil }
+        index += 1
+        if index == data.count { return nil }
+        let vc = viewControllerAtIndex(index)
+        return vc
+    }
+}
+
+extension HomeViewController {
+    private func viewControllerAtIndex(_ index: Int) -> WordViewerViewController? {
+        guard data.count > index else { return nil }
+        let firstWordController = mainSB.instantiateViewController(identifier: "WordViewerViewController")
+            as! WordViewerViewController
+        firstWordController.word = data[index]
+        return firstWordController
+    }
+
+    private func indexOfViewController(_ viewController: WordViewerViewController) -> Int {
+        return data.firstIndex(where: { return $0 == viewController.word }) ?? NSNotFound
     }
 }
