@@ -501,12 +501,15 @@ Words</string>
                                 <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⬅️ Swipe back and forth to change the page of the book. ➡️" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaQ-c6-18c">
-                                <rect key="frame" x="44" y="339.66666666666669" width="808" height="37.333333333333314"/>
+                                <rect key="frame" x="44" y="356.33333333333331" width="808" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" name="BubbleBobble" family="Bubble Bobble" pointSize="33"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="1"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="BubbleBobble" family="Bubble Bobble" pointSize="18"/>
+                                </variation>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hUm-Pp-BdO"/>
