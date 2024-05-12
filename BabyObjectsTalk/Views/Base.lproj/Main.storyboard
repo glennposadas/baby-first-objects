@@ -287,9 +287,9 @@ Words</string>
                                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25d-BB-jJW" userLabel="Leaf Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
                                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                                <state key="normal" image="bicycle"/>
+                                                                <state key="normal" image="leaf"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="bicycle"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="leaf"/>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="HXA-zz-Jdo"/>
@@ -298,9 +298,9 @@ Words</string>
                                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTb-1M-Lds" userLabel="Moon Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
                                                                 <rect key="frame" x="146" y="0.0" width="138" height="138"/>
                                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                                <state key="normal" image="bus"/>
+                                                                <state key="normal" image="moon"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="bus"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="moon"/>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="zWG-za-dFc"/>
@@ -318,9 +318,9 @@ Words</string>
                                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhi-CA-FEX" userLabel="Mouse Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
                                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                                <state key="normal" image="hand"/>
+                                                                <state key="normal" image="mouse"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="hand"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="mouse"/>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="MOD-nJ-jez"/>
@@ -329,9 +329,9 @@ Words</string>
                                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cry-o4-NZ5" userLabel="Sun" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
                                                                 <rect key="frame" x="146" y="0.0" width="138" height="138"/>
                                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                                <state key="normal" image="house"/>
+                                                                <state key="normal" image="sun"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="house"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="sun"/>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="BV0-Px-KpY"/>
@@ -345,9 +345,9 @@ Words</string>
                                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qab-im-3qn" userLabel="Tree Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
                                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                                <state key="normal" image="grass"/>
+                                                                <state key="normal" image="tree"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="grass"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="tree"/>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="L10-xj-jNB"/>
@@ -356,9 +356,9 @@ Words</string>
                                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jG-nK-xjI" userLabel="Broccoli Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
                                                                 <rect key="frame" x="146" y="0.0" width="138" height="138"/>
                                                                 <size key="titleShadowOffset" width="10" height="0.0"/>
-                                                                <state key="normal" image="hammer"/>
+                                                                <state key="normal" image="broccoli"/>
                                                                 <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="hammer"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="broccoli"/>
                                                                 </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="p2b-XX-Ph4"/>
@@ -537,6 +537,7 @@ Words</string>
         <image name="bg" width="3035.666748046875" height="2189"/>
         <image name="bicycle" width="900" height="920"/>
         <image name="boat" width="900" height="840"/>
+        <image name="broccoli" width="750" height="1000"/>
         <image name="bus" width="900" height="460"/>
         <image name="car" width="900" height="600"/>
         <image name="cat" width="900" height="800"/>
@@ -547,8 +548,13 @@ Words</string>
         <image name="hammer" width="900" height="600"/>
         <image name="hand" width="900" height="1250"/>
         <image name="house" width="900" height="540"/>
+        <image name="leaf" width="900" height="500"/>
+        <image name="moon" width="900" height="930"/>
+        <image name="mouse" width="900" height="1080"/>
         <image name="shoes" width="900" height="700"/>
+        <image name="sun" width="900" height="880"/>
         <image name="train" width="900" height="460"/>
+        <image name="tree" width="900" height="1090"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
