@@ -1,17 +1,8 @@
 {
   "images" : [
     {
-      "filename" : "car.jpg",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "car.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {
