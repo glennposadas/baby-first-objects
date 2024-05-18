@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C3T-bs-A6M">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C3T-bs-A6M">
     <device id="retina6_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -75,14 +75,14 @@ Words</string>
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="43R-Jl-SAN" customClass="HomeViewController" customModule="BabyObjectsTalk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YYn-Wc-IrO">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYv-Lg-7Uj">
-                                <rect key="frame" x="552" y="0.0" width="300" height="1000"/>
+                                <rect key="frame" x="552" y="0.0" width="300" height="2000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utM-fv-5EB" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="738"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="1598"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPf-a4-Dp0" userLabel="Apple Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="8" width="138" height="138"/>
@@ -197,10 +197,196 @@ Words</string>
                                                     <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="XfU-A3-w3N"/>
                                                 </connections>
                                             </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lFC-M4-4mc">
+                                                <rect key="frame" x="8" y="738" width="284" height="138"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poe-0R-ogZ" userLabel="Bicycle Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                                        <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                        <state key="normal" image="bicycle"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="word" value="bicycle"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="y5I-4r-A0D"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBN-1h-k5T" userLabel="Bus Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="146" y="0.0" width="138" height="138"/>
+                                                        <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                        <state key="normal" image="bus"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="word" value="bus"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="wfv-Fh-5QB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="04s-bV-Q1y">
+                                                <rect key="frame" x="8" y="884" width="284" height="138"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ug-RA-Ryl" userLabel="Grass Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                                        <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                        <state key="normal" image="grass"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="word" value="grass"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="AXk-Zs-n2S"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W17-dY-mvv" userLabel="Hammer Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="146" y="0.0" width="138" height="138"/>
+                                                        <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                        <state key="normal" image="hammer"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="word" value="hammer"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="U78-p1-Gab"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nd1-64-9gJ">
+                                                <rect key="frame" x="8" y="1030" width="284" height="138"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AD7-8F-9yL" userLabel="Hand Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                                        <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                        <state key="normal" image="hand"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="word" value="hand"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="sTP-Fn-eIP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-fh-bsK" userLabel="House Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                        <rect key="frame" x="146" y="0.0" width="138" height="138"/>
+                                                        <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                        <state key="normal" image="house"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="word" value="house"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="SM2-il-86e"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ycb-o9-wF2">
+                                                <rect key="frame" x="8" y="1176" width="284" height="414"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JF5-5W-iTS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="284" height="138"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25d-BB-jJW" userLabel="Leaf Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                                                <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                                <state key="normal" image="leaf"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="leaf"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="HXA-zz-Jdo"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTb-1M-Lds" userLabel="Moon Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                                <rect key="frame" x="146" y="0.0" width="138" height="138"/>
+                                                                <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                                <state key="normal" image="moon"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="moon"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="zWG-za-dFc"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="vTb-1M-Lds" firstAttribute="width" secondItem="25d-BB-jJW" secondAttribute="width" id="Ba2-lL-R4r"/>
+                                                            <constraint firstItem="vTb-1M-Lds" firstAttribute="height" secondItem="25d-BB-jJW" secondAttribute="height" id="sUi-0S-4z0"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FQ2-Ia-0ZG">
+                                                        <rect key="frame" x="0.0" y="138" width="284" height="138"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhi-CA-FEX" userLabel="Mouse Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                                                <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                                <state key="normal" image="mouse"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="mouse"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="MOD-nJ-jez"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cry-o4-NZ5" userLabel="Sun" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                                <rect key="frame" x="146" y="0.0" width="138" height="138"/>
+                                                                <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                                <state key="normal" image="sun"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="sun"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="BV0-Px-KpY"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zYu-XK-bnU">
+                                                        <rect key="frame" x="0.0" y="276" width="284" height="138"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qab-im-3qn" userLabel="Tree Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                                                <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                                <state key="normal" image="tree"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="tree"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="L10-xj-jNB"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jG-nK-xjI" userLabel="Broccoli Button" customClass="BaseButton" customModule="BabyObjectsTalk" customModuleProvider="target">
+                                                                <rect key="frame" x="146" y="0.0" width="138" height="138"/>
+                                                                <size key="titleShadowOffset" width="10" height="0.0"/>
+                                                                <state key="normal" image="broccoli"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="word" value="broccoli"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="wordButtonTapped:" destination="43R-Jl-SAN" eventType="touchUpInside" id="p2b-XX-Ph4"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="9jG-nK-xjI" firstAttribute="height" secondItem="qab-im-3qn" secondAttribute="height" id="l0L-7i-HMb"/>
+                                                            <constraint firstItem="9jG-nK-xjI" firstAttribute="width" secondItem="qab-im-3qn" secondAttribute="width" id="uik-iZ-Vaz"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="qab-im-3qn" firstAttribute="height" secondItem="rhi-CA-FEX" secondAttribute="height" id="4RS-PQ-OpE"/>
+                                                    <constraint firstItem="qab-im-3qn" firstAttribute="width" secondItem="rhi-CA-FEX" secondAttribute="width" id="4d7-Cf-Fqa"/>
+                                                    <constraint firstItem="cry-o4-NZ5" firstAttribute="height" secondItem="25d-BB-jJW" secondAttribute="height" id="T4I-Td-km1"/>
+                                                    <constraint firstItem="rhi-CA-FEX" firstAttribute="height" secondItem="25d-BB-jJW" secondAttribute="height" id="dT7-3e-oAR"/>
+                                                    <constraint firstItem="rhi-CA-FEX" firstAttribute="width" secondItem="25d-BB-jJW" secondAttribute="width" id="qOj-Bo-a5u"/>
+                                                    <constraint firstItem="cry-o4-NZ5" firstAttribute="width" secondItem="25d-BB-jJW" secondAttribute="width" id="z42-PS-7cB"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstItem="Ha4-4E-FG8" firstAttribute="height" secondItem="nUo-d7-bMt" secondAttribute="height" id="0dl-Hf-ufp"/>
+                                            <constraint firstItem="uBN-1h-k5T" firstAttribute="width" secondItem="qZp-1b-ucq" secondAttribute="width" id="1Qh-D4-uto"/>
+                                            <constraint firstItem="04s-bV-Q1y" firstAttribute="trailing" secondItem="lFC-M4-4mc" secondAttribute="trailing" id="1UK-I7-7sL"/>
+                                            <constraint firstItem="Nd1-64-9gJ" firstAttribute="trailing" secondItem="04s-bV-Q1y" secondAttribute="trailing" id="1oy-oA-by6"/>
                                             <constraint firstItem="abU-4q-e5i" firstAttribute="leading" secondItem="dX8-Ag-bwN" secondAttribute="leading" id="3v4-88-2dW"/>
                                             <constraint firstItem="Ha4-4E-FG8" firstAttribute="trailing" secondItem="nUo-d7-bMt" secondAttribute="trailing" id="4XO-ff-4Cd"/>
                                             <constraint firstItem="dX8-Ag-bwN" firstAttribute="trailing" secondItem="kFU-qY-A8i" secondAttribute="trailing" id="8co-vB-dir"/>
@@ -210,33 +396,55 @@ Words</string>
                                             <constraint firstItem="r9E-yp-SsZ" firstAttribute="trailing" secondItem="BPf-a4-Dp0" secondAttribute="trailing" id="DzN-qI-2OH"/>
                                             <constraint firstItem="abU-4q-e5i" firstAttribute="bottom" secondItem="fc4-Sy-ied" secondAttribute="bottom" id="FaD-87-BFh"/>
                                             <constraint firstItem="qZp-1b-ucq" firstAttribute="trailing" secondItem="l54-l5-qrA" secondAttribute="trailing" id="Gsj-dk-trz"/>
+                                            <constraint firstItem="04s-bV-Q1y" firstAttribute="top" secondItem="lFC-M4-4mc" secondAttribute="bottom" constant="8" id="IyR-RZ-cux"/>
+                                            <constraint firstItem="6ug-RA-Ryl" firstAttribute="width" secondItem="poe-0R-ogZ" secondAttribute="width" id="JHU-A7-j5K"/>
                                             <constraint firstItem="dX8-Ag-bwN" firstAttribute="top" secondItem="r9E-yp-SsZ" secondAttribute="top" id="K8I-gu-Slf"/>
                                             <constraint firstAttribute="trailing" secondItem="kFU-qY-A8i" secondAttribute="trailing" constant="8" id="KlF-5w-j3W"/>
                                             <constraint firstItem="qZp-1b-ucq" firstAttribute="leading" secondItem="l54-l5-qrA" secondAttribute="leading" id="Lwf-b6-E1w"/>
                                             <constraint firstItem="l54-l5-qrA" firstAttribute="top" secondItem="nUo-d7-bMt" secondAttribute="top" id="MDj-5o-yp7"/>
+                                            <constraint firstItem="Nd1-64-9gJ" firstAttribute="leading" secondItem="04s-bV-Q1y" secondAttribute="leading" id="OdO-vr-4pA"/>
                                             <constraint firstItem="fc4-Sy-ied" firstAttribute="leading" secondItem="r9E-yp-SsZ" secondAttribute="leading" id="PFW-fU-5lq"/>
+                                            <constraint firstItem="dHa-fh-bsK" firstAttribute="height" secondItem="W17-dY-mvv" secondAttribute="height" id="Q0y-KO-4y4"/>
                                             <constraint firstItem="kFU-qY-A8i" firstAttribute="top" secondItem="BPf-a4-Dp0" secondAttribute="top" id="QBG-rB-WPL"/>
                                             <constraint firstItem="l54-l5-qrA" firstAttribute="leading" secondItem="abU-4q-e5i" secondAttribute="leading" id="QOA-ch-Csk"/>
+                                            <constraint firstItem="Nd1-64-9gJ" firstAttribute="top" secondItem="04s-bV-Q1y" secondAttribute="bottom" constant="8" id="ReM-Ys-2lb"/>
                                             <constraint firstItem="abU-4q-e5i" firstAttribute="top" secondItem="fc4-Sy-ied" secondAttribute="top" id="T7i-8E-Psg"/>
                                             <constraint firstItem="r9E-yp-SsZ" firstAttribute="leading" secondItem="BPf-a4-Dp0" secondAttribute="leading" id="Vin-O8-9qp"/>
                                             <constraint firstItem="kFU-qY-A8i" firstAttribute="bottom" secondItem="BPf-a4-Dp0" secondAttribute="bottom" id="W1g-SF-XHa"/>
+                                            <constraint firstItem="poe-0R-ogZ" firstAttribute="width" secondItem="Ha4-4E-FG8" secondAttribute="width" id="WtO-gY-fKV"/>
+                                            <constraint firstItem="lFC-M4-4mc" firstAttribute="trailing" secondItem="qZp-1b-ucq" secondAttribute="trailing" id="XUf-0c-Idp"/>
+                                            <constraint firstItem="lFC-M4-4mc" firstAttribute="top" secondItem="Ha4-4E-FG8" secondAttribute="bottom" constant="8" id="YbH-8N-COA"/>
                                             <constraint firstItem="Ha4-4E-FG8" firstAttribute="top" secondItem="nUo-d7-bMt" secondAttribute="bottom" constant="8" id="ZiJ-3F-TZK"/>
                                             <constraint firstItem="dX8-Ag-bwN" firstAttribute="leading" secondItem="kFU-qY-A8i" secondAttribute="leading" id="aKX-I5-dYw"/>
+                                            <constraint firstItem="25d-BB-jJW" firstAttribute="width" secondItem="AD7-8F-9yL" secondAttribute="width" id="axP-vl-cdw"/>
+                                            <constraint firstItem="ycb-o9-wF2" firstAttribute="top" secondItem="Nd1-64-9gJ" secondAttribute="bottom" constant="8" id="dTf-hk-aTc"/>
                                             <constraint firstItem="l54-l5-qrA" firstAttribute="bottom" secondItem="nUo-d7-bMt" secondAttribute="bottom" id="dZm-3p-iNc"/>
+                                            <constraint firstItem="poe-0R-ogZ" firstAttribute="height" secondItem="Ha4-4E-FG8" secondAttribute="height" id="dnP-Wr-avW"/>
+                                            <constraint firstItem="ycb-o9-wF2" firstAttribute="trailing" secondItem="Nd1-64-9gJ" secondAttribute="trailing" id="dsv-Wr-bGk"/>
                                             <constraint firstItem="nUo-d7-bMt" firstAttribute="leading" secondItem="fc4-Sy-ied" secondAttribute="leading" id="eUP-tw-fhs"/>
+                                            <constraint firstItem="04s-bV-Q1y" firstAttribute="leading" secondItem="lFC-M4-4mc" secondAttribute="leading" id="ftA-XQ-pck"/>
+                                            <constraint firstItem="AD7-8F-9yL" firstAttribute="width" secondItem="6ug-RA-Ryl" secondAttribute="width" id="g2W-XJ-uGk"/>
+                                            <constraint firstItem="uBN-1h-k5T" firstAttribute="height" secondItem="qZp-1b-ucq" secondAttribute="height" id="gKR-3B-YBg"/>
                                             <constraint firstItem="BPf-a4-Dp0" firstAttribute="top" secondItem="utM-fv-5EB" secondAttribute="top" constant="8" id="gz4-Qc-gVw"/>
                                             <constraint firstItem="r9E-yp-SsZ" firstAttribute="top" secondItem="BPf-a4-Dp0" secondAttribute="bottom" constant="8" id="h0F-dT-XRI"/>
                                             <constraint firstItem="abU-4q-e5i" firstAttribute="trailing" secondItem="dX8-Ag-bwN" secondAttribute="trailing" id="hlu-gS-C3b"/>
                                             <constraint firstItem="fc4-Sy-ied" firstAttribute="top" secondItem="r9E-yp-SsZ" secondAttribute="bottom" constant="8" id="hu6-cN-ypK"/>
                                             <constraint firstItem="nUo-d7-bMt" firstAttribute="top" secondItem="fc4-Sy-ied" secondAttribute="bottom" constant="8" id="krh-xr-Ay4"/>
+                                            <constraint firstItem="AD7-8F-9yL" firstAttribute="height" secondItem="6ug-RA-Ryl" secondAttribute="height" id="l2p-wm-uI2"/>
+                                            <constraint firstItem="ycb-o9-wF2" firstAttribute="leading" secondItem="Nd1-64-9gJ" secondAttribute="leading" id="ncz-yv-Vg9"/>
                                             <constraint firstItem="fc4-Sy-ied" firstAttribute="height" secondItem="r9E-yp-SsZ" secondAttribute="height" id="nmG-M7-KRC"/>
                                             <constraint firstItem="qZp-1b-ucq" firstAttribute="bottom" secondItem="Ha4-4E-FG8" secondAttribute="bottom" id="old-CG-Kuc"/>
                                             <constraint firstItem="kFU-qY-A8i" firstAttribute="leading" secondItem="utM-fv-5EB" secondAttribute="centerX" constant="4" id="rXD-lM-x6m"/>
                                             <constraint firstItem="BPf-a4-Dp0" firstAttribute="leading" secondItem="utM-fv-5EB" secondAttribute="leading" constant="8" id="sIE-Sn-hib"/>
                                             <constraint firstAttribute="centerX" secondItem="BPf-a4-Dp0" secondAttribute="trailing" constant="4" id="sJ1-Ua-CIU"/>
                                             <constraint firstItem="fc4-Sy-ied" firstAttribute="trailing" secondItem="r9E-yp-SsZ" secondAttribute="trailing" id="tlE-io-40U"/>
+                                            <constraint firstItem="6ug-RA-Ryl" firstAttribute="height" secondItem="poe-0R-ogZ" secondAttribute="height" id="u1u-Ra-gq4"/>
+                                            <constraint firstItem="W17-dY-mvv" firstAttribute="height" secondItem="uBN-1h-k5T" secondAttribute="height" id="uED-OK-UeD"/>
                                             <constraint firstItem="nUo-d7-bMt" firstAttribute="trailing" secondItem="fc4-Sy-ied" secondAttribute="trailing" id="ue5-aw-31v"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ha4-4E-FG8" secondAttribute="bottom" constant="8" id="yCJ-yp-S02"/>
+                                            <constraint firstItem="dHa-fh-bsK" firstAttribute="width" secondItem="W17-dY-mvv" secondAttribute="width" id="vEZ-iw-OOC"/>
+                                            <constraint firstAttribute="bottom" secondItem="ycb-o9-wF2" secondAttribute="bottom" constant="8" id="vex-Rx-2Cp"/>
+                                            <constraint firstItem="W17-dY-mvv" firstAttribute="width" secondItem="uBN-1h-k5T" secondAttribute="width" id="wmN-G8-ikK"/>
+                                            <constraint firstItem="25d-BB-jJW" firstAttribute="height" secondItem="AD7-8F-9yL" secondAttribute="height" id="wul-lI-mdi"/>
                                             <constraint firstItem="dX8-Ag-bwN" firstAttribute="bottom" secondItem="r9E-yp-SsZ" secondAttribute="bottom" id="ygh-Hx-JF8"/>
                                             <constraint firstItem="nUo-d7-bMt" firstAttribute="height" secondItem="fc4-Sy-ied" secondAttribute="height" id="ygx-ru-eaa"/>
                                             <constraint firstItem="r9E-yp-SsZ" firstAttribute="height" secondItem="BPf-a4-Dp0" secondAttribute="height" id="zcg-Cz-voR"/>
@@ -252,8 +460,8 @@ Words</string>
                                     <constraint firstAttribute="trailing" secondItem="utM-fv-5EB" secondAttribute="trailing" id="t07-hW-r5W"/>
                                 </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13w-GL-mGE" userLabel="Page View Controller Container View">
-                                <rect key="frame" x="0.0" y="0.0" width="552" height="1000"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13w-GL-mGE" userLabel="Page View Controller Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="552" height="2800"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -269,7 +477,7 @@ Words</string>
                             <constraint firstItem="WYv-Lg-7Uj" firstAttribute="bottom" secondItem="YYn-Wc-IrO" secondAttribute="bottom" id="sjh-xR-84N"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="896" height="1000"/>
+                    <size key="freeformSize" width="896" height="2000"/>
                     <connections>
                         <outlet property="constraint_ScrollViewWidth" destination="LOX-8x-ZOB" id="bWT-bJ-wcT"/>
                         <outlet property="contentView" destination="utM-fv-5EB" id="URg-lC-dzl"/>
@@ -279,7 +487,7 @@ Words</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ZN-jK-mV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-919.41964285714278" y="1579.7101449275362"/>
+            <point key="canvasLocation" x="-937.5" y="2286.9565217391305"/>
         </scene>
         <!--Word Viewer View Controller-->
         <scene sceneID="TWo-J2-i7T">
@@ -293,12 +501,15 @@ Words</string>
                                 <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⬅️ Swipe back and forth to change the page of the book. ➡️" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaQ-c6-18c">
-                                <rect key="frame" x="44" y="339.66666666666669" width="808" height="37.333333333333314"/>
+                                <rect key="frame" x="44" y="356.33333333333331" width="808" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" name="BubbleBobble" family="Bubble Bobble" pointSize="33"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="1"/>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="BubbleBobble" family="Bubble Bobble" pointSize="18"/>
+                                </variation>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hUm-Pp-BdO"/>
@@ -325,16 +536,28 @@ Words</string>
     <resources>
         <image name="apple" width="614" height="626"/>
         <image name="baby" width="1200" height="1200"/>
-        <image name="ball" width="626" height="626"/>
+        <image name="ball" width="900" height="520"/>
         <image name="bg" width="3035.666748046875" height="2189"/>
-        <image name="boat" width="626" height="626"/>
-        <image name="car" width="500" height="500"/>
-        <image name="cat" width="363" height="360"/>
+        <image name="bicycle" width="900" height="920"/>
+        <image name="boat" width="900" height="840"/>
+        <image name="broccoli" width="750" height="1000"/>
+        <image name="bus" width="900" height="460"/>
+        <image name="car" width="900" height="600"/>
+        <image name="cat" width="900" height="800"/>
         <image name="dog" width="626" height="680"/>
-        <image name="duck" width="626" height="621"/>
+        <image name="duck" width="900" height="830"/>
         <image name="flower" width="626" height="626"/>
-        <image name="shoes" width="626" height="417"/>
-        <image name="train" width="1488" height="1168"/>
+        <image name="grass" width="900" height="820"/>
+        <image name="hammer" width="900" height="600"/>
+        <image name="hand" width="900" height="1250"/>
+        <image name="house" width="900" height="540"/>
+        <image name="leaf" width="900" height="500"/>
+        <image name="moon" width="900" height="930"/>
+        <image name="mouse" width="900" height="1080"/>
+        <image name="shoes" width="900" height="700"/>
+        <image name="sun" width="900" height="880"/>
+        <image name="train" width="900" height="460"/>
+        <image name="tree" width="900" height="1090"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
